@@ -1,9 +1,9 @@
 import health.TemplateHealthCheck;
 import io.dropwizard.Application;
-import io.dropwizard.Configuration;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
 import resources.HelloWorldDropwizardResource;
+import resources.HelloWorldSimple;
 
 public class HelloWorldDropwizardApplication extends Application<HelloWorldDropwizardConfiguration> {
     public static void main(String[] args) throws Exception {
@@ -23,9 +23,12 @@ public class HelloWorldDropwizardApplication extends Application<HelloWorldDropw
         final HelloWorldDropwizardResource resource = new HelloWorldDropwizardResource(
                 configuration.getTemplate(),
                 configuration.getDefaultName()
-        );final TemplateHealthCheck healthCheck =
+        );
+        final HelloWorldSimple simple = new HelloWorldSimple();
+        final TemplateHealthCheck healthCheck =
                 new TemplateHealthCheck(configuration.getTemplate());
         environment.healthChecks().register("template", healthCheck);
         environment.jersey().register(resource);
+        environment.jersey().register(simple);
     }
 }
