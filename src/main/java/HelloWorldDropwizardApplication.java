@@ -3,7 +3,6 @@ import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
 import resources.HelloWorldDropwizardResource;
-import resources.HelloWorldSimple;
 
 public class HelloWorldDropwizardApplication extends Application<HelloWorldDropwizardConfiguration> {
     public static void main(String[] args) throws Exception {
@@ -20,15 +19,10 @@ public class HelloWorldDropwizardApplication extends Application<HelloWorldDropw
     }
     @Override
     public void run(HelloWorldDropwizardConfiguration configuration, Environment environment)  {
-        final HelloWorldDropwizardResource resource = new HelloWorldDropwizardResource(
-                configuration.getTemplate(),
-                configuration.getDefaultName()
-        );
-        final HelloWorldSimple simple = new HelloWorldSimple();
+        final HelloWorldDropwizardResource resource = new HelloWorldDropwizardResource();
         final TemplateHealthCheck healthCheck =
                 new TemplateHealthCheck(configuration.getTemplate());
         environment.healthChecks().register("template", healthCheck);
         environment.jersey().register(resource);
-        environment.jersey().register(simple);
     }
 }
