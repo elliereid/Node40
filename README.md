@@ -1,4 +1,4 @@
-Node 40 Intro to Dropwizard
+### Node 40 Intro to Dropwizard ###
 
 - Clone repo locally via ZIP or from the command line
 - Open up a terminal and navigate to the newly cloned directory
