@@ -1,0 +1,8 @@
+resources/HelloWorldDropwizardResource.java
+ resources.HelloWorldDropwizardResource
+health/TemplateHealthCheck.java
+ health.TemplateHealthCheck
+HelloWorldDropwizardConfiguration.java
+ HelloWorldDropwizardConfiguration
+HelloWorldDropwizardApplication.java
+ HelloWorldDropwizardApplication
