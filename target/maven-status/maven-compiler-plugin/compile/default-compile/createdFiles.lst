@@ -1,0 +1,4 @@
+resources/HelloWorldDropwizardResource.class
+HelloWorldDropwizardApplication.class
+health/TemplateHealthCheck.class
+HelloWorldDropwizardConfiguration.class
