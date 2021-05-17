@@ -1,5 +1,4 @@
-/Users/elliereid/HelloWorldDropwizard/src/main/java/HelloWorldDropwizardConfiguration.java
-/Users/elliereid/HelloWorldDropwizard/src/main/java/resources/HelloWorldDropwizardResource.java
-/Users/elliereid/HelloWorldDropwizard/src/main/java/health/TemplateHealthCheck.java
-/Users/elliereid/HelloWorldDropwizard/src/main/java/HelloWorldDropwizardApplication.java
-/Users/elliereid/HelloWorldDropwizard/src/main/java/api/Saying.java
+/Users/elliereid/Node40Gradle/src/main/java/resources/HelloWorldDropwizardResource.java
+/Users/elliereid/Node40Gradle/src/main/java/HelloWorldDropwizardConfiguration.java
+/Users/elliereid/Node40Gradle/src/main/java/HelloWorldDropwizardApplication.java
+/Users/elliereid/Node40Gradle/src/main/java/health/TemplateHealthCheck.java
